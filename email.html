@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>email.html</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="email.css">	
+<!--	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="slicknav.css"> -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="Mosely_Project1.js"></script> 
+	<script src="jquery.slicknav.min.js"></script>
+</head>
+
+
+<body>
+
+
+	<header>
+		<img src="pumpkin.gif" alt="Orange cartoon pumpkin" id= "imgHead"/> 
+			<section class="headerSection">
+				<h2 class="head">The Halloween Store</h2>
+				<h3 class="secHead">For the little Goblin in all of us!</h3>
+			</section>		
+	</header>
+	
+	<div class="navbar">
+		<div class="dropdown">
+				<button class="dropbtn">Home
+					<i class="fa fa-caret-down"></i>
+				</button>
+			<div class="dropdown-content">
+				<a href="http://mcs.athens.edu/~amosely/Project1">Home </a>
+			</div>
+		</div>				
+			
+			
+		<div class="dropdown">
+				<button class="dropbtn">Product List
+					<i class="fa fa-caret-down"></i>
+				</button>
+			<div class="dropdown-content">
+				<a href="product_index.html">Product List </a>
+			</div>
+		</div>
+			
+		<div class="dropdown">
+				<button class="dropbtn">Personal
+					<i class="fa fa-caret-down"></i>
+				</button>
+			<div class="dropdown-content">
+				<a href="personal_index.html">Personal </a>
+			</div>
+		</div>
+			
+		<div class="dropdown">
+					<button class="dropbtn">Decorating Ideas
+						<i class="fa fa-caret-down"></i>
+					</button>
+				<div class="dropdown-content">
+					<a href="#">Outdoor</a>
+					<a href="#">Indoor</a>
+					<a href="#">Table</a>
+					<a href="#">Treats</a>
+				</div>
+			</div>
+			
+			<div class="dropdown">
+					<button class="dropbtn" id="current">Join Email
+						<i class="fa fa-caret-down"></i>
+					</button>
+				<div class="dropdown-content">
+					<a href="email.html">Join Email</a>
+				</div>
+			</div>
+	</div>			
+	
+<div class ="row">
+
+	<div id = "nav_vertical" class="column left">
+		<ul>
+			<li><a href ="#" target="_blank">Props</a> </li>
+			<li><a href ="#" target="_blank">Costumes</a> </li>
+			<li><a href ="#" target="_blank">Special FX</a> </li>
+			<li><a href ="#" target="_blank">Masks</a> </li>
+		</ul>
+	</div>
+
+	<div class="column right">
+			
+		<h1>Please enter the following information: </h1>
+		
+		<form action="subscribe.html">
+			<p><label for="first_name">First Name:</label><input type="text" name="first_name" id="first_name">
+				</p>
+        	<p><label for="last_name">Last Name:</label><input type="text" name="last_name" id="last_name">
+				</p>
+			<p><label for="email">Email:</label><input type="text" name="email" id="email">
+				</p>
+			<p><label for="zip">Zipcode:</label><input type="text" name="zip" placeholder= "Optional but appreciated: 99999" id="zip">
+				</p>
+			<p><input type = "submit" name="submit" value="Subscribe" id="button">
+			</p>
+		</form>
+	</div>
+</div>
+
+<footer> © 2016 Ben Murach</footer>
+
+
+</body>
+
+
+</html>

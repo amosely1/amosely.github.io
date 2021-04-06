@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Mosely Project1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="main_rwd.css">	
+<!--	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="slicknav.css"> -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="Mosely_Project1.js"></script> 
+	<script src="jquery.slicknav.min.js"></script>
+</head>
+
+
+<body>
+
+
+	<header>
+		<img src="pumpkin.gif" alt="Orange cartoon pumpkin" id= "imgHead"/> 
+			<section class="headerSection">
+				<h2 class="head">The Halloween Store</h2>
+				<h3 class="secHead">For the little Goblin in all of us!</h3>
+			</section>		
+	</header>
+	
+	<nav id = "mobile_menu" class="slicknav_menu">
+		<ul>
+			<li><a class="current" href="products.html">Home</a></li>
+			<li><a href="cats.html">Product List</a></li>
+			<li><a href="#">Personal</a></li>
+			<li><a href="#">Decorating Ideas</a>
+				<ul>
+					<li><a href="#">Outdoor</a></li>
+					<li><a href="#">Indoor</a></li>
+					<li><a href="#">Table</a></li>
+					<li><a href="#">Treats</a></li>
+				</ul>
+			<li><a href="#">Join Email</a></li>
+		</ul>
+	</nav>
+	
+	<div class="navbar">
+		<div class="dropdown">
+				<button class="dropbtn" id="current">Home
+					<i class="fa fa-caret-down"></i>
+				</button>
+			<div class="dropdown-content">
+				<a href="http://mcs.athens.edu/~amosely/Project1">Home </a>
+			</div>
+		</div>				
+			
+			
+		<div class="dropdown">
+				<button class="dropbtn">Product List
+					<i class="fa fa-caret-down"></i>
+				</button>
+			<div class="dropdown-content">
+				<a href="product_index.html">Product List </a>
+			</div>
+		</div>
+			
+		<div class="dropdown">
+				<button class="dropbtn">Personal
+					<i class="fa fa-caret-down"></i>
+				</button>
+			<div class="dropdown-content">
+				<a href="personal_index.html">Personal</a>
+			</div>
+		</div>
+			
+		<div class="dropdown">
+					<button class="dropbtn">Decorating Ideas
+						<i class="fa fa-caret-down"></i>
+					</button>
+				<div class="dropdown-content">
+					<a href="#">Outdoor</a>
+					<a href="#">Indoor</a>
+					<a href="#">Table</a>
+					<a href="#">Treats</a>
+				</div>
+			</div>
+			
+			<div class="dropdown">
+					<button class="dropbtn">Join Email
+						<i class="fa fa-caret-down"></i>
+					</button>
+				<div class="dropdown-content">
+					<a href="email.html">Join Email</a>
+				</div>
+			</div>
+	</div>			
+	
+<div class ="row">
+
+	<div id = "nav_vertical" class="column left">
+		<ul>
+			<li><a href ="#" target="_blank">Props</a> </li>
+			<li><a href ="#" target="_blank">Costumes</a> </li>
+			<li><a href ="#" target="_blank">Special FX</a> </li>
+			<li><a href ="#" target="_blank">Masks</a> </li>
+		</ul>
+	</div>
+
+	<div class="column right">
+			
+		<h1>Welcome to my site. <br /> Please come in and stay awhile.</h1>
+
+		<p>I started this web site because Halloween has always been my favorite holiday.
+		But during the last year, I started selling some of my favorite Halloween products, and they've 
+		become quite a hit. </p>
+
+		<p>If you click on the Personal link, you can browse my favorite Halloween pictures,
+		stories, and films. And if you join my email list, I will keep you up-to-date on all things
+		Halloween. </p>
+		
+		
+		
+		<section >
+			<h2>Product of the Week</h2>
+			<a href="cats.html"> <img class="cat" src="cat1.jpg" alt="Deranged black cat" id="imgCat" /> </a>
+			<br>
+			<a class="cat" href ="cats.html" target="_blank">20" Deranged Cat</a>
+		</section>
+		
+		<h3>My guarantee</h3>
+
+		<p>If you aren't completely satisfied with everything you buy from my site, you
+		can return it for a full refund. <b>No questions asked!</b> </p>
+	</div>
+</div>
+
+<footer> © 2016 Ben Murach</footer>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,341 @@
+*
+{
+	font-family: Helvetica, sans-seriff;
+}
+
+body:before, body:after 
+{
+    content: "";
+    position: fixed;
+    
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+body:before 
+{
+    top: 0;
+}
+body:after 
+{
+    bottom: 0;
+}
+body 
+{
+	border: 2px solid black;
+	background-color: white;	 
+	box-shadow: 5px 10px 8px 10px black;
+	margin: 1em auto;
+	max-width: 960px;
+	width: 95%;
+}
+
+.head
+{	
+	font-size: 250%;
+	color: black;
+	line-height: 0.20em;
+}
+
+.secHead
+{
+	font-size: 125%;
+	line-height: 0px;
+}
+
+.headerSection
+{
+	text-indent: 0px;
+	width: 89%;
+	float: right;
+}
+
+h1::first-letter 
+{
+  font-size: 175%;
+} 
+
+h1
+{
+	font-size: 170%;
+}
+
+a:link
+{ 
+	color: orange;
+	font-weight: bold;
+}
+	
+a:visited
+{
+	color: orange;
+}
+
+a:hover, a:focus, a:active
+{
+	color: green;
+}
+
+li
+{
+	margin-left: 2em;
+	font-size: 110%;
+	padding-left: 0.25em;
+}
+
+footer
+{
+	font-size: 90%;
+	text-align: center;
+	
+	border-top: 2px solid black;
+	padding: 0.5em 1em;
+	line-height: 25px;
+	background: linear-gradient(45deg, black 0%, orange 75%, white 100%);
+}
+
+html
+{
+	background-image: url("bats.gif");
+	background-repeat: repeat;
+}
+
+header
+{
+	border-bottom: 2px solid black;
+	padding: 1em 0em;
+	background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	background-image: -webkit-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	background-image: -moz-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	background-image: -o-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+}
+
+#imgHead
+{	
+	min-width: 40px;
+	width: 9%;
+	height: auto;
+	margin-left: 1em;	
+}
+
+body h1, h2, h3, p, ul
+{
+	padding:0 5%;
+}
+
+.column 
+{
+  float: left;
+  
+}
+
+.left 
+{
+  width: 20%;
+}
+
+.right 
+{
+  width: 80%;
+}
+
+/* Clear floats after the columns */
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Clear floats before the columns */
+.row:before 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cat
+{
+	padding-left: 2em;
+	padding-top: 0em;
+}
+
+/* Navbar container */
+.navbar
+{
+	overflow: hidden;
+	background-color: black;
+	font-family: sans-seriff;
+	
+}
+
+/* Links inside the navbar */
+.navbar a
+{
+	float: left;
+	font-size: 100%;
+	color: white;
+	text-align: center;
+	padding: 0.88em 1em;
+	text-decoration: none;
+
+}
+
+/* The dropdown container */
+.dropdown
+{
+	float: left;
+	overflow: hidden;
+	width: 20%;
+	background-color:black;
+	text-align: center;
+	
+}
+
+/* Dropdown button */
+.dropdown .dropbtn
+{
+	
+	
+	font-size: 100%;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 0.88em 1em;
+	background-color: inherit;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a grey background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn
+{
+	background-color: grey;
+	min-width: 20%;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content
+{
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 10%;
+}
+
+.dropdown .active
+{
+	color: orange;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a
+{
+	float: none;
+	color: white;
+	padding: 0.75em 1em;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover 
+{
+	background-color: grey;
+	min-width: 20%;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content
+{
+	display: block;
+}
+	
+/* Vertical nav bar */
+#nav_vertical li
+{
+	list-style-type: none;
+	width: 70%;
+	margin-bottom: 0.5em;
+	border: 3px solid black;
+	padding: 0;
+}
+
+#nav_vertical ul li a 
+{
+	display:block ;
+	text-decoration: none;
+	padding: 0.25em 0.5em;
+	color: black;
+	font-size: 100%;
+	background-color: orange;
+	font-weight: bold;
+}
+
+#nav_vertical ul li a:hover, #nav_vertical ul li a:focus
+{
+	background-color:gray;
+}
+
+#imgCat
+{	
+	width: 20%;
+	height: auto;
+	margin-left: 0em;
+}
+
+#mobile_menu
+{
+	display: none;
+}
+
+
+/* Media query for tablet portrait */
+@media only screen and (max-width: 800px)
+{
+	* 
+	{
+		font-size: 90%;
+	}
+
+	html
+	{	
+		background-image: none;
+	}
+
+	body
+	{
+		max-width: 800px;
+		box-shadow: none;
+		font-size: 90%;
+	}
+	
+	.headerSection
+	{
+		margin-top: -50px;
+	}
+	
+}
+
+/* Media query for mobile landscape */
+@media only screen and (max-width: 767px)
+{
+	.js #menu
+	{
+		display: none;
+	}
+	
+	.js .slicknav_menu
+	{
+		display: block;
+	}
+	
+}
+
+#current
+{
+	color: orange;
+}
